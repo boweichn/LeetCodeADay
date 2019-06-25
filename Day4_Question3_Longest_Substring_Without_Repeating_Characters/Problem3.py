@@ -31,3 +31,6 @@ class Solution:
                     length_list = len(longest)
                 longest = longest[longest.index(letter)+1:]+letter    
         return max(length_list, len(longest))
+
+# Solution logic. Longest will keep adding new characters of the string until a repetition is found. Then the length of the longest is recorded
+# string before repetition is removed, and process starts at the repetition. keeps going until longest length is found.

@@ -38,5 +38,5 @@ var lengthOfLongestSubstring = function(s) {
             longest.splice(0,longest.indexOf(s[i])+1)
             longest = longest.join("")+s[i]
         }
-    } return longest
+    } return Math.max(length_list, longest.length)
 };
